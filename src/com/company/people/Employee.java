@@ -1,0 +1,43 @@
+package com.company.people;
+
+public class Employee extends People {
+
+    private int employeeNumber;
+    private String jobTitle;
+    private String hireDate;
+    private int hours;
+
+
+    public Employee(int age, String name, String race, char gender, int employeeNumber, String jobTitle, String hireDate) {
+        super(age, name, race, gender);
+        this.employeeNumber = employeeNumber;
+        this.jobTitle = jobTitle;
+        this.hireDate = hireDate;
+    }
+
+    public int getEmployeeNumber() {
+        return employeeNumber;
+    }
+
+
+
+    public String getJobTitle() {
+        return jobTitle;
+    }
+
+    public void setJobTitle(String jobTitle) {
+        this.jobTitle = jobTitle;
+    }
+
+    public String getHireDate() {
+        return hireDate;
+    }
+
+    public int getHours() {
+        return hours;
+    }
+
+    public void setHours(int hours) {
+        this.hours = hours;
+    }
+}
