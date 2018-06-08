@@ -1,12 +1,16 @@
 package com.company.menu;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Peoplemenu {
+public class PeopleMenu {
     //Handles People Option
     private Scanner input = new Scanner(System.in);
 
-    private void managePeople() {
+    protected void mangagePeople() {
+    }
+
+    protected void managePeople() {
 
         try {
             System.out.println("are you "
@@ -25,7 +29,8 @@ public class Peoplemenu {
                     break;
                 case 3:
                     //handle going back to mainMenu()
-                    mainMenu();
+                    Menu menu = new Menu();
+                    menu.mainMenu();
                 case 4:
                     //Handle exiting the program
                     System.out.println("Thank you for using the Zoo Program");
@@ -34,4 +39,15 @@ public class Peoplemenu {
                     System.out.println("That is not a vailid entry. Please enter a number between 1 and 4");
                     //incorrect number
                     break;
+            }
+        } catch (InputMismatchException ime){
+            System.out.println("That is not a vailid entry. Please enter a number between 1 and 4");
+            managePeople();
+
+        }
+    }
+
+    private void manageEmployee() {
+
+    }
 }

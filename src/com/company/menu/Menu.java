@@ -16,7 +16,8 @@ public class Menu {
             switch (input.nextInt()) {
                 case 1:
                     //Manage People
-                    managePeople();
+                    PeopleMenu peopleMenu= new PeopleMenu();
+                    peopleMenu.managePeople();
                     break;
                 case 2:
                     //Manage Animal
