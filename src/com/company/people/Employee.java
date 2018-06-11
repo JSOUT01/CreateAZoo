@@ -1,5 +1,7 @@
 package com.company.people;
 
+import java.util.List;
+
 public class Employee extends People {
 
     private int employeeNumber;
@@ -7,6 +9,7 @@ public class Employee extends People {
     private String hireDate;
     private int hours;
 
+    private List <People> 
 
     public Employee(int age, String name, String race, char gender, int employeeNumber, String jobTitle, String hireDate) {
         super(age, name, race, gender);
