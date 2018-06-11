@@ -178,6 +178,8 @@ public class PeopleMenu {
 
             Employee newEmployee = new Employee(employeeAge, employeeName, employeeRace,employeeGender, employeeNumber, jobTitle, hireDate);
 
+        } else if (location == 2) {
+
         }
 
 

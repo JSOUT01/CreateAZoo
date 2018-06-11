@@ -1,5 +1,6 @@
 package com.company.people;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Employee extends People {
@@ -9,7 +10,11 @@ public class Employee extends People {
     private String hireDate;
     private int hours;
 
-    private List <People> 
+    public Employee() {
+
+    }
+
+    private List <Employee> employeeList = new ArrayList<Employee>();
 
     public Employee(int age, String name, String race, char gender, int employeeNumber, String jobTitle, String hireDate) {
         super(age, name, race, gender);
@@ -42,5 +47,11 @@ public class Employee extends People {
 
     public void setHours(int hours) {
         this.hours = hours;
+    }
+
+    public void addEmployee (Employee newEmployee) {
+
+        employeeList.add(newEmployee);
+        System.out.println(newEmployee.getname);
     }
 }
